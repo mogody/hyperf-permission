@@ -1,5 +1,5 @@
 {
-    "name": "donjan-deng/hyperf-permission",
+    "name": "mogody/hyperf-permission",
     "description": "hyperf权限管理组件",
     "keywords": [
         "donjan",
@@ -11,23 +11,17 @@
         "rbac",
         "security"
     ],
-    "homepage": "https://github.com/donjan-deng/hyperf-permission",
+    "homepage": "https://github.com/mogody/hyperf-permission",
     "license": "MIT",
     "authors": [
         {
-            "name": "Donjan",
-            "homepage": "https://github.com/donjan-deng",
-            "role": "Developer"
-        },
-        {
-            "name": "Freek Van der Herten",
-            "email": "freek@spatie.be",
-            "homepage": "https://spatie.be",
+            "name": "Mogody",
+            "homepage": "https://github.com/mogody",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": ">=7.4",
         "ext-swoole": ">=4.5",
         "hyperf/database": "~2.0",
         "hyperf/db-connection": "~2.0",
