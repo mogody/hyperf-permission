@@ -12,7 +12,7 @@ use Hyperf\Utils\ApplicationContext;
 class CacheReset extends HyperfCommand
 {
 
-    protected $name = 'permission:cache-reset';
+    protected ?string $name = 'permission:cache-reset';
 
     public function __construct()
     {

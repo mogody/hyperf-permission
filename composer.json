@@ -23,9 +23,10 @@
     "require": {
         "php": ">=8.0",
         "ext-swoole": ">=4.5",
+        "hyperf/cache": "~3.0.0",
+        "hyperf/command": "^3.0",
         "hyperf/database": "~3.0.0",
         "hyperf/db-connection": "~3.0.0",
-        "hyperf/cache": "~3.0.0",
         "hyperf/utils": "~3.0.0",
         "hyperf/validation": "~3.0.0"
     },
