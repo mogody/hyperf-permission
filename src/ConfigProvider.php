@@ -4,9 +4,9 @@ declare(strict_types = 1);
 
 namespace Donjan\Permission;
 
-use Hyperf\Utils\Collection;
-use Hyperf\Utils\Filesystem\Filesystem;
+use Hyperf\Collection\Collection;
 use Donjan\Permission\Commands\CacheReset;
+use Hyperf\Support\Filesystem\Filesystem;
 
 class ConfigProvider
 {
