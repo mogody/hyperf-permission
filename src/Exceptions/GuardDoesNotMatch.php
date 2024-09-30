@@ -4,8 +4,8 @@ declare(strict_types = 1);
 
 namespace Donjan\Permission\Exceptions;
 
+use Hyperf\Collection\Collection;
 use InvalidArgumentException;
-use Hyperf\Utils\Collection;
 
 class GuardDoesNotMatch extends InvalidArgumentException
 {

@@ -4,7 +4,9 @@ declare(strict_types = 1);
 
 namespace Donjan\Permission\Exceptions;
 
-class UnauthorizedException extends \RuntimeException
+use RuntimeException;
+
+class UnauthorizedException extends RuntimeException
 {
     private $requiredRoles = [];
 

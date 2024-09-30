@@ -4,10 +4,10 @@ declare(strict_types = 1);
 
 namespace Donjan\Permission\Commands;
 
+use Hyperf\Context\ApplicationContext;
 use Donjan\Permission\PermissionRegistrar;
 use Hyperf\Command\Annotation\Command;
 use Hyperf\Command\Command as HyperfCommand;
-use Hyperf\Utils\ApplicationContext;
 
 class CacheReset extends HyperfCommand
 {

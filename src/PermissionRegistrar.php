@@ -2,7 +2,7 @@
 
 namespace Donjan\Permission;
 
-use Hyperf\Utils\Collection;
+use Hyperf\Collection\Collection;
 use Donjan\Permission\Contracts\Role;
 use Donjan\Permission\Contracts\Permission;
 use Psr\Container\ContainerInterface;
@@ -26,7 +26,7 @@ class PermissionRegistrar {
     /** @var string */
     protected $roleClass;
 
-    /** @var \Hyperf\Utils\Collection */
+    /** @var \Hyperf\Collection\Collection */
     protected $permissions;
 
     /** @var DateInterval|int */
@@ -81,7 +81,7 @@ class PermissionRegistrar {
      *
      * @param array $params
      *
-     * @return \Hyperf\Utils\Collection
+     * @return \Hyperf\Collection\Collection
      */
     public function getPermissions(array $params = []): Collection {
         if ($this->permissions === null) {

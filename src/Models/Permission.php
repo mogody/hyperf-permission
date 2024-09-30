@@ -4,9 +4,9 @@ declare(strict_types = 1);
 
 namespace Donjan\Permission\Models;
 
-use Hyperf\Utils\ApplicationContext;
+use Hyperf\Collection\Collection;
+use Hyperf\Context\ApplicationContext;
 use Donjan\Permission\Guard;
-use Hyperf\Utils\Collection;
 use Donjan\Permission\Traits\HasRoles;
 use Hyperf\DbConnection\Model\Model;
 use Donjan\Permission\PermissionRegistrar;
@@ -118,8 +118,8 @@ class Permission extends Model implements PermissionContract
      * 获取树形的permission列表.
      * @param int||string $parentId 父级ID
      * @param bool $isUrl 是否是一个URL
-     * @param Collection $permission 传入permission集合，如果不传将从所有的permission生成
-     * @return Collection
+     * @param \Hyperf\Collection\Collection $permission 传入permission集合，如果不传将从所有的permission生成
+     * @return \Hyperf\Collection\Collection
      */
     public static function getMenuList($parentId = 0, $isUrl = false, Collection $permission = null)
     {
